@@ -1,0 +1,342 @@
+ @import url(https://fonts:googleapis.com/css? family=open+sans|Tangerine:italic|Inconsolata:bold|Sofia);
+body{
+	width:100%;
+    font-family:'open sans',serif;
+    margin: 0;
+}
+html{
+    background-image: url("https://s-media-cache-ak0.pinimg.com/736x/ec/04/a3/ec04a3d6f97ce3c2fd54b3579d8761df.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+}
+header{
+    background-color:blueviolet;
+    color:antiquewhite;
+    
+    }
+header img{
+		height: 120px;
+		width: 170px;
+	}
+[class*="col-"] {
+	width: 100%;
+	margin: 0;
+	float: left;
+} 
+.row::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+
+.title{
+    text-align:center;
+    font-size: 23px;
+    font-family: 'Tangerine', serif;
+}
+.menu{
+    background-color:maroon;
+    display:block;
+    text-align:center;
+    padding:15px;
+    font-size: 20px;
+}
+.accordion {
+    padding: 10px;
+    width: 100%;
+    text-align:center;
+    font-size: 15px;
+    
+}
+.panel {
+    display: none;
+    background-color:lightgoldenrodyellow;
+}
+.panel.show {
+    display: block;
+}
+.menubar{
+	background-color:maroon;
+    text-align:center;
+    padding:10px;
+	color: azure;
+}
+.disp{
+    display:none;   
+}
+.disp a{
+    color:white;
+    padding:50px;
+}
+.tabmenu{
+    display:none;
+    text-align:center;
+    background-color:maroon;
+    padding:15px;
+    font-size: 20px;
+}
+.tabmenu a{
+    padding:30px;  
+    color:brown;
+}
+.body1{
+    border:solid black 2px;
+	background-color: antiquewhite;
+    margin-top: 5px;
+}
+.picture{
+	text-align:center;
+	margin-top:5px;
+}
+.picture img{
+     width: 80%;
+    height: auto;
+    
+}
+.desc{
+    color:chocolate;
+    display:block; 
+    font-size: 20px;
+    text-align: center;
+}
+.desc h1
+{
+    font-family:'Inconsolata',serif; 
+    color:red;
+}
+* {box-sizing: border-box;}
+.PhotoGallery {
+    background-color:darkorange;
+	text-align:center;
+    margin-top:20px;
+    }
+  
+.PhotoGallery img{
+    width: 100%;
+    height: auto;
+    padding: .5em;
+}
+.NR{
+    background-color:darkkhaki;
+    text-align: center;
+    margin-top:20px;
+}
+.NR h2 {
+    text-decoration: underline;
+    color: deeppink;  
+}
+.NR img{
+    width:100%;
+    height:auto;  
+    display:none;
+}
+.awards{
+    border: solid black 1px; 
+    background-color:deepskyblue;
+    text-align: center;
+    margin-top: 20px;
+}
+.awards img{
+     width:170px;
+    height:150px;
+    display:none;
+    margin-left:400px;  
+}
+
+.awards h2{
+    color:crimson;
+    padding-right: 10em;
+    margin-right: 45%;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.awards h3{
+    color: crimson;
+}
+.awards ol li{
+    font-size:15px;
+}
+.info{
+    background-color:lawngreen;
+    text-align:center;
+    color:brown;
+    margin-left:100px;
+    margin-top:10px;
+    border: 1px solid black;
+}
+.footer{
+    float:left;
+    clear:both;
+    background-color:lightsalmon;
+    width:auto;
+    height:10%;
+    border: 1px solid black;
+    margin-top: 20px;
+    
+}
+.footer p{
+    float: left;
+    padding-left: 160px;
+    padding-right: 70px;
+    color:blueviolet;
+}
+
+/* FOR TABLET VIEW: */
+@media screen and (min-width: 768px){
+    .tabmenu{display:block;}
+    .tabmenu a{text-decoration: none;}
+    .dropdown {
+    position:relative;
+    display: inline-block;
+}
+    .button {
+   color:rgb(246, 128, 134);
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.button:hover, .button:focus { 
+}
+    .dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu {
+     width:auto;
+    display: none;
+    background-color:rgb(233, 188, 236);
+     position: absolute;
+}
+.dropdown-menu a {
+    color:black;
+    padding: 10px;
+    text-shadow:1px 1px purple;
+    display: block;
+    text-decoration: none;
+}
+.dropdown a:hover {}
+
+.show {display:block;}
+    
+    .menu{display:none};
+    .disp{display:none;}
+   
+     .awards p{text-align:right;
+        
+    }
+    .awards h2{
+    margin-left: 0%;
+    font-size:25px;
+    text-align: center;
+        padding-top: 15px;
+    
+        
+}
+    .info{display:block;}
+    .PhotoGallery img{
+    padding: 2em;
+}
+.picture img{
+     width: 100%;
+    height: auto;
+}
+    
+.col-t-1 {width: 8.33%;}
+.col-t-2 {width: 16.66%;}
+.col-t-3 {width: 25%;}
+.col-t-4 {width: 33.33%;}
+.col-t-5 {width: 41.66%;}
+.col-t-6 {width: 50%;}
+.col-t-7 {width: 58.33%;}
+.col-t-8 {width: 66.66%;}
+.col-t-9 {width: 75%;}
+.col-t-10 {width: 83.33%;}
+.col-t-11 {width: 91.66%;}
+.col-t-12 {width: 100%;}
+}
+
+
+/* For desktop: */
+@media screen and (min-width:1024px)
+{
+   
+.disp{display: block;}
+    .menu{display: none;}
+    
+    .dropdown {
+    position:relative;
+    display: inline-block;
+}
+
+    .button {
+   color:rgb(246, 128, 134);
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button:hover, .button:focus { 
+}
+    .dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu {
+     width:auto;
+    overflow: auto;
+    display: none;
+    background-color:rgb(233, 188, 236);
+     position: absolute;
+}
+
+.dropdown-menu a {
+    color:black;
+    padding: 10px;
+    text-shadow: 1px 1px purple;
+    display: block;
+    font-family:cursive;
+    text-decoration: none;
+}
+
+.dropdown a:hover {}
+
+.show {display:block;}
+    .tabmenu button{display:none;}
+    .NR img{ display:block;
+      width:75%;
+        height:50%;}
+    .NR p{text-align:left;}
+    
+ .awards p{text-align:justify;
+     margin-left: 15%;
+     margin-top: 0;
+        
+    }
+    .awards h2{font-size:30px;
+    text-align: center;
+     margin-left: 170px;
+     padding-top: 30px;}
+.awards h3{
+    margin-left: 0;
+}
+.PhotoGallery img{
+    padding: 1em;
+}
+body{
+	width: 80%;
+    margin: auto;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
